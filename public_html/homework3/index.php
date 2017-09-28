@@ -37,6 +37,8 @@ $obj->stringLength($str);
 
 $obj->stringRepeat($str);
 
+$obj->stringReverse($str);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -170,7 +172,12 @@ print_r($result12);
 echo '<hr>';
 }
 
-
+public function stringReverse($str) {
+echo '<h1>String Reverse </h1>';
+$result13 =strrev($str);
+print_r($result13);
+echo '<hr>';
+}
 public function _destruct() {
 echo '</br> i\'m done';
 }

@@ -15,6 +15,8 @@ $obj->mergeArray($array1,$array2);
 $array3 = array(1, "Hello", 1, "beautiful", "Hello");
 $obj->array_count_values($array3);
 
+$obj->array_product($array);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -52,6 +54,17 @@ $result1= array_count_values($array3);
 print_r($result1);
 echo '<hr>';
 }
+
+public function array_product($array){
+echo '<h1>Product of array</h1>';
+echo '</br>Array used:</br>';
+print_r($array);
+echo '</br>Product of array</br>';
+$result2= array_product($array);
+print_r($result2);
+echo '<hr>';
+}
+
 
 public function _destruct() {
 echo '</br> i\'m done';

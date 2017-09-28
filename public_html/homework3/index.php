@@ -39,6 +39,8 @@ $obj->stringRepeat($str);
 
 $obj->stringReverse($str);
 
+$obj->stringUpper($str);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -178,6 +180,15 @@ $result13 =strrev($str);
 print_r($result13);
 echo '<hr>';
 }
+
+public function stringUpper($str) {
+echo '<h1>String to uppercase</h1>';
+$result14=strtoupper($str);
+print_r($result14);
+echo '<hr>';
+}
+
+
 public function _destruct() {
 echo '</br> i\'m done';
 }

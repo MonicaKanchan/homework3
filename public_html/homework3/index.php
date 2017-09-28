@@ -11,6 +11,10 @@ $obj->printArray($array);
 $array1 = array("Monica","Nehal");
 $array2 = array("Shriya","Ankita","Meetali");
 $obj->mergeArray($array1,$array2);
+
+$array3 = array(1, "Hello", 1, "beautiful", "hello");
+$obj->array_count_values($array3);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -38,6 +42,17 @@ $result= array_merge($array1,$array2);
 print_r($result);
 echo '<hr>';
 }
+
+public function array_count_values(array3);
+echo '<h1>Count Array values</h1>';
+echo '</br>Array 3</br>';
+print_r($array3);
+echo '</br>Count Array Values</br>';
+$result1= array_count_values($array3);
+print_r($result1);
+echo '<hr>';
+}
+
 public function _destruct() {
 echo '</br> i\'m done';
 }

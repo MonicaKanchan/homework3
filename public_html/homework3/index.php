@@ -41,6 +41,8 @@ $obj->stringReverse($str);
 
 $obj->stringUpper($str);
 
+$obj->stringPadding($str); 
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -188,7 +190,15 @@ print_r($result14);
 echo '<hr>';
 }
 
+public function stringPadding($str){
+echo'<h1>String Padding</h1>';
+$result15= str_pad($str, 10,"-=", STR_PAD_LEFT);
+print_r($result15);
+echo '<hr>';
+}
 
+print function stringLower($str) {
+echo'<h1>String to Lower
 public function _destruct() {
 echo '</br> i\'m done';
 }

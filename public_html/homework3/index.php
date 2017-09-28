@@ -30,6 +30,8 @@ $obj->natsort();
 
 $obj->array_fill();
 
+$obj->compact();
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -134,6 +136,17 @@ print_r($array9);
 echo '<hr>';
 }
 
+public function compact() {
+echo '<h1>Compact function</h1>';
+$school= "NJIT";
+$department= "Information Systems";
+$year= "graduate";
+
+$university=array("school","department");
+$result10 =compact("year", "nope", $university);
+print_r($result10);
+echo '<hr>';
+}
 
 public function _destruct() {
 echo '</br> i\'m done';

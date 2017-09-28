@@ -12,7 +12,7 @@ $array1 = array("Monica","Nehal");
 $array2 = array("Shriya","Ankita","Meetali");
 $obj->mergeArray($array1,$array2);
 
-$array3 = array(1, "Hello", 1, "beautiful", "hello");
+$array3 = array(1, "Hello", 1, "beautiful", "Hello");
 $obj->array_count_values($array3);
 
 class main{
@@ -43,7 +43,7 @@ print_r($result);
 echo '<hr>';
 }
 
-public function array_count_values($array3);
+public function array_count_values($array3){
 echo '<h1>Count Array values</h1>';
 echo '</br>Array 3</br>';
 print_r($array3);

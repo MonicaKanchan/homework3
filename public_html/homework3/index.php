@@ -19,6 +19,9 @@ $obj->array_product($array);
 
 $obj->array_push();
 
+$array4= array(2,4,6,8,0);
+$obj->array_sum($array4);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -73,6 +76,15 @@ echo '<h1>Array Push</h1>';
 $a1=array("Mango","Apple");
 array_push($a1, "Grape");
 print_r($a1);
+echo '<hr>';
+}
+
+public function array_sum($array4){
+echo '<h1>Array Sum</h1>';
+echo '</br> Array used:</br>';
+print_r($array4);
+$result3= array_sum($array4);
+print_r($result3);
 echo '<hr>';
 }
 

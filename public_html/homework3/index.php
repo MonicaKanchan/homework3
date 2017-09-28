@@ -28,6 +28,8 @@ $obj->asort();
 
 $obj->natsort();
 
+$obj->array_fill();
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -122,6 +124,16 @@ echo '</br>Natural order sorting:</br>';
 print_r($array7);
 echo'<hr>';
 }
+
+public function array_fill() {
+echo '<h1>array fill</h1>';
+$array8 =array_fill(3, 4, 'Teddy');
+$array9 =array_fill(-7, 5, 'Bear');
+print_r($array8);
+print_r($array9);
+echo '<hr>';
+}
+
 
 public function _destruct() {
 echo '</br> i\'m done';

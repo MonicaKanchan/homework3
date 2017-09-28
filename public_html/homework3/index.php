@@ -17,6 +17,8 @@ $obj->array_count_values($array3);
 
 $obj->array_product($array);
 
+$obj->array_push();
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -65,6 +67,14 @@ print_r($result2);
 echo '<hr>';
 }
 
+public function array_push()
+{
+echo '<h1>Array Push</h1>';
+$a1=array("Mango","Apple");
+array_push($a1, "Grape");
+print_r($a1);
+echo '<hr>';
+}
 
 public function _destruct() {
 echo '</br> i\'m done';

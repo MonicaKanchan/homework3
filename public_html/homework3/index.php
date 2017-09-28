@@ -32,6 +32,11 @@ $obj->array_fill();
 
 $obj->compact();
 
+$str= 'Monica';
+$obj->stringLength($str);
+
+$obj->stringRepeat($str);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -147,6 +152,24 @@ $result10 =compact("year", "nope", $university);
 print_r($result10);
 echo '<hr>';
 }
+
+public function stringLength($str) {
+echo '<h1> String length</h1>';
+echo '</br>String used</br>';
+print_r($str);
+echo '<br>String length:</br>';
+$result11 =strlen($str);
+print_r ($result11);
+echo '<hr>';
+}
+
+public function stringRepeat($str) {
+echo '<h1>String Repeat </h1>';
+$result12 =str_repeat($str,6);
+print_r($result12);
+echo '<hr>';
+}
+
 
 public function _destruct() {
 echo '</br> i\'m done';

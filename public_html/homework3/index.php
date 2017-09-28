@@ -45,6 +45,8 @@ $obj->stringPadding($str);
 
 $obj->stringLower($str);
 
+$obj->stringShuffle($str);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -207,7 +209,12 @@ echo '<hr>';
 }
 
 public function stringShuffle($str) {
-echo'<
+echo'<h1>string Shuffle</h1>';
+$result17=str_shuffle($str);
+print_r($result17);
+echo '<hr>';
+}
+
 public function _destruct() {
 echo '</br> i\'m done';
 }

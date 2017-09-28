@@ -43,6 +43,8 @@ $obj->stringUpper($str);
 
 $obj->stringPadding($str); 
 
+$obj->stringLower($str);
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -197,8 +199,15 @@ print_r($result15);
 echo '<hr>';
 }
 
-print function stringLower($str) {
-echo'<h1>String to Lower
+public function stringLower($str) {
+echo'<h1>String to Lowercase</h1>';
+$result16=strtolower($str);
+print_r($result16);
+echo '<hr>';
+}
+
+public function stringShuffle($str) {
+echo'<
 public function _destruct() {
 echo '</br> i\'m done';
 }

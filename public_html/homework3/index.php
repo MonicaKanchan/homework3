@@ -43,7 +43,7 @@ print_r($result);
 echo '<hr>';
 }
 
-public function array_count_values(array3);
+public function array_count_values($array3);
 echo '<h1>Count Array values</h1>';
 echo '</br>Array 3</br>';
 print_r($array3);

@@ -22,6 +22,8 @@ $obj->array_push();
 $array4= array(2,4,6,8,0);
 $obj->array_sum($array4);
 
+$obj->array_slice();
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -86,6 +88,14 @@ print_r($array4);
 $result3= array_sum($array4);
 print_r($result3);
 echo '<hr>';
+}
+
+public function array_slice() {
+echo '<h1>Array slice</h1>';
+$array5= array("p","q","r","s");
+array_slice($array5, 2);
+print_r(array_slice($array5,2));
+echo '</hr>';
 }
 
 public function _destruct() {

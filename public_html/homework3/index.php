@@ -26,6 +26,8 @@ $obj->array_slice();
 
 $obj->asort();
 
+$obj->natsort();
+
 class main{
 public function _construct(){
 echo 'hello i\'m an object </br>';
@@ -97,7 +99,7 @@ echo '<h1>Array slice</h1>';
 $array5= array("p","q","r","s");
 array_slice($array5, 2);
 print_r(array_slice($array5,2));
-echo '</hr>';
+echo '<hr>';
 }
 
 public function asort() {
@@ -105,7 +107,20 @@ echo '<h1>Array sort</h1>';
 $x1 =array("lemon", "orange", "pineapple", "apple");
 asort($x1);
 print_r($x1);
-echo '</hr>';
+echo '<hr>';
+}
+
+public function natsort() {
+echo '<h1>Array Natural Sort</h1>';
+$array6=  $array7 = array("file23", "file10", "file46", "file2", "file18");
+asort($array6);
+echo '</br>Standard sorting:</br>';
+print_r($array6);
+
+natsort($array7);
+echo '</br>Natural order sorting:</br>';
+print_r($array7);
+echo'<hr>';
 }
 
 public function _destruct() {

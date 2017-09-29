@@ -52,7 +52,9 @@ $obj->stringShuffle($str);
 
 $obj->strWordCount($str1);
 
-$obj->stringCasecmp($str,$str2);
+$obj->stringSimilartext($str,$str2);
+
+$obj->stringLTrim($str1);
 
 class main{
 public function _construct(){
@@ -230,10 +232,17 @@ print_r($result18);
 echo '<hr>';
 }
 
-public function stringCasecmp($str,$st2){
-echo '<h1> String Case Comparison</h1>';
-if(strcasecmp($str,$str2)== 0)
-echo'$str is equal to $str2 in  a case-insensitive string comparison';
+public function stringSimilartext($str, $str2){
+echo'<h1>Similar text</h1>';
+$result19=similar_text($str,$str2);
+print_r($result19);
+echo '<hr>';
+}
+
+public function stringLTrim($str1) {
+echo '<h1>String Left Trim</h1>';
+$result20= ltrim($str1);
+print_r($result20);
 echo '<hr>';
 }
 

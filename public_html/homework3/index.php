@@ -33,6 +33,8 @@ $obj->array_fill();
 $obj->compact();
 
 $str= 'Monica';
+$str1= 'I love pizza and subway sooo much';
+
 $obj->stringLength($str);
 
 $obj->stringRepeat($str);
@@ -46,6 +48,8 @@ $obj->stringPadding($str);
 $obj->stringLower($str);
 
 $obj->stringShuffle($str);
+
+$obj->strWordCount($str1);
 
 class main{
 public function _construct(){
@@ -215,6 +219,15 @@ print_r($result17);
 echo '<hr>';
 }
 
+public function strWordCount($str2)
+{
+echo'<h1>String Word Count</h1>';
+$result18=str_word_count($str2);
+print_r($result18);
+echo '<hr>';
+}
+
+public function string
 public function _destruct() {
 echo '</br> i\'m done';
 }

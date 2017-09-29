@@ -33,6 +33,7 @@ $obj->array_fill();
 $obj->compact();
 
 $str= 'Monica';
+$str2= 'mONICA';
 $str1= 'I love pizza and subway sooo much';
 
 $obj->stringLength($str);
@@ -50,6 +51,8 @@ $obj->stringLower($str);
 $obj->stringShuffle($str);
 
 $obj->strWordCount($str1);
+
+$obj->stringCasecmp($str,$str2);
 
 class main{
 public function _construct(){
@@ -227,7 +230,13 @@ print_r($result18);
 echo '<hr>';
 }
 
-public function string
+public function stringCasecmp($str,$st2){
+echo '<h1> String Case Comparison</h1>';
+if(strcasecmp($str,$str2)== 0)
+echo'$str is equal to $str2 in  a case-insensitive string comparison';
+echo '<hr>';
+}
+
 public function _destruct() {
 echo '</br> i\'m done';
 }

@@ -63,5 +63,5 @@ public function post()
 print_r($_POST);
 }
 }
-
+?>
 
